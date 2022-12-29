@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Web Pages</title>
+    <style>
+        body{
+            background-color:rgb(247, 231, 206);
+
+        }
+        #form{
+            display: flex;
+            justify-content: center;
+        }
+        #body1 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        input{
+            display: flex;
+        }
+        #login-form{
+            border: 2px solid black;
+            padding: 50px;
+             
+        }
+        #courseList{
+            display: inline-block;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+        <div class="body1">
+            <h1 id="table-heading">TABLES AND LISTS</h1>
+            <table id="courseTable" border="2px solid black">
+                <tr>
+                    <th>Roll No</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Department</th>
+                </tr>
+                <tr>
+                    <td>3006</td>
+                    <td>AJAY.J</td>
+                    <td>CLOUD COMPUTING</td>
+                    <td>IT</td>
+                </tr>
+                <tr>
+                 <td>3010</td>
+                 <td>ARAVIND N.J</td>
+                 <td>NETWORK SECURITY</td>
+                 <td>IT</td>
+                </tr>
+                <tr>
+                 <td>3021</td>
+                 <td>DINESH.S</td>
+                 <td>INTERNET OF THINGS</td>
+                 <td>IT</td>
+                </tr>
+                <tr>
+                 <td>3028</td>
+                 <td>GOKUL.J</td>
+                 <td>DATA SCIENCE</td>
+                 <td>IT</td>
+                </tr>
+             </table>
+             <h2 id="courseHeading">Courses Available</h2>
+             <ul id="courseList">
+                 <li>Computer Science</li>
+                 <li>Cyber Security</li>
+                 <li>Aerospace</li>
+                 <li>Artificial Intelligence</li>
+                 <li>Electronics</li>
+             </ul>
+     
+         </div>
+    </center>
+
+<br>
+
+
+<center>
+    <div>
+        <h1 id="imageHeading">Image Map</h1>
+
+
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFjYm9vayUyMHByb3xlbnwwfHwwfHw%3D&w=1000&q=80" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://i.ytimg.com/vi/RVqBUFA8W68/maxresdefault.jpg">
+            <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.digitaltrends.com/wp-content/uploads/2022/10/google-pixel-7-pro-review-2.jpg?p=1">
+            <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://wallpaperaccess.com/full/1158153.jpg">
+        </map>
+    </div>
+</center>
+
+    
+
+    <br>
+    
+    <div id="form">
+        <form id="login-form" action="#">   
+            <label for="fname">Name:</label>
+            <input id="fname" type="text">
+            <br>
+            <label for="password">Password:</label>
+            <input id="password" type="password">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email">
+            <br>
+            <label for="course">Course:</label>
+            <select name="course" id="course">
+                <option value="computer">computer</option>
+                <option value="it">it</option>
+                <option value="ece">ece</option>
+            </select>
+            <br>
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" cols="30" rows="10"></textarea>
+            <br>
+            <label for="countries">Country</label>
+            <input list="countries" name="countries" id="countries">
+            <datalist id="countries">
+                <option value="India">
+                <option value="USA">
+                <option value="Australia">
+                <option value="Germany">
+                <option value="UK">
+            </datalist>
+            <br>
+
+            <button id="submit_btn">SUBMIT</button>
+            
+        </form>
+    </div>
+    <br>
+    <div>
+        <center>
+            <h1 id="frameHeading">FRAMES IN HTML</h1>
+            <iframe id="frameImage1" title="Inline Frame Example" width="300" height="200" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"></iframe>
+            <iframe id="frameImage2" title="Inline Frame Example" width="300" height="200" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"></iframe>
+        </center>
+    </div>
+</body>
+</html>
